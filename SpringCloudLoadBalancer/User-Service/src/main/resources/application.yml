@@ -1,0 +1,14 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: user-service
+
+eureka:
+  instance:
+    hostname: localhost  # Explicitly set the hostname
+    prefer-ip-address: true  # Register with IP instead of hostname
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
